@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🪽 NEON FLOCK — Interactive Animation Playground
 
-First, run the development server:
+### A tiny playground for big, beautiful motion.
+
+An interactive, full-screen animation project built with **Next.js**, **Three.js**, and **Vanta.js**. Watch a neon flock sweep across a deep black canvas, then explore the experimental 3D globe and shader scenes included in the project.
+
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-19-149eca?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-3D-black?logo=threedotjs&logoColor=white)
+
+<br />
+
+<img src="./public/vanta-birds-demo.gif" alt="Neon pink birds flying across a black canvas" width="100%" />
+
+<sub>🎞️ A capture of the live Birds animation. Move your pointer over the scene to interact.</sub>
+
+</div>
+
+## ✨ What’s inside
+
+- **A full-screen animated flock** with Vanta Birds, a black canvas, and vivid pink and cyan colors.
+- **Pointer and touch interaction** so the scene responds to your movement.
+- **A reusable 3D globe experiment** with photo markers, rotation, and configurable controls.
+- **A shader smoke experiment** ready to explore.
+- A responsive, edge-to-edge canvas built with React and Three.js.
+
+> The Birds scene is the animation currently shown on the home page. The globe and smoke components are included as experiments and are not currently mounted there.
+
+## 🚀 Run it locally
+
+You’ll need [Node.js](https://nodejs.org/) and npm.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) and enjoy the flight. 🐦
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎛️ Explore the experiments
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Scene | File | What it does |
+| --- | --- | --- |
+| Neon Birds | [`components/ui/BirdsBackground.tsx`](./components/ui/BirdsBackground.tsx) | Full-screen Vanta flock with mouse and touch controls. |
+| 3D Globe | [`components/ui/3d-globe.tsx`](./components/ui/3d-globe.tsx) | React Three Fiber globe with optional photo markers, atmosphere, and orbit controls. |
+| Smoke Shader | [`app/components/smokescreen.tsx`](./app/components/smokescreen.tsx) | Shader preview component for a smoke-like visual. |
 
-## Learn More
+To switch scenes, edit [`app/page.tsx`](./app/page.tsx) and mount the component you want to try.
 
-To learn more about Next.js, take a look at the following resources:
+## 🧰 Built with
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/) and [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Three.js](https://threejs.org/) and [React Three Fiber](https://r3f.docs.pmnd.rs/)
+- [Vanta.js](https://www.vantajs.com/) for the animated Birds background
+- [Tailwind CSS](https://tailwindcss.com/) for styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💜 About
 
-## Deploy on Vercel
+Made as an animation playground to experiment with motion, color, and interactive 3D on the web. Clone it, change the palette, switch the scene, and make it your own.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+
+**Made to move. Built to play.** ✨
+
+</div>

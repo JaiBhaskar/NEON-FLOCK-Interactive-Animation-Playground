@@ -15,7 +15,7 @@ An interactive, full-screen animation project built with **Next.js**, **Three.js
 
 <img src="./public/vanta-birds-demo.gif" alt="Neon pink birds flying across a black canvas" width="100%" />
 
-<sub>🎞️ A capture of the live Birds animation. Move your pointer over the scene to interact.</sub>
+<sub>🎞️ A capture of the live Birds animation. Just Move your pointer over the scene to interact.</sub>
 
 </div>
 
